@@ -161,7 +161,7 @@ function draw() {
     manualBotton.visible = false;
     backBotton.visible = false;
 
-    if(touches.length > 0 || mousePressedOver(playBotton)){
+    if(touches.playBotton > 0 || mousePressedOver(playBotton)){
       gameState = "loginStage1";
       //RBAThemeSound.stop();
       TimeWorld = 0;
@@ -171,7 +171,7 @@ function draw() {
       optionsBotton.visible = false;
       touches = [];
     }
-    if(touches.length > 0 || mousePressedOver(optionsBotton)){
+    if(touches.optionsBotton > 0 || mousePressedOver(optionsBotton)){
       gameState = "options";
       title.visible = false;
       playBotton.visible = false;
